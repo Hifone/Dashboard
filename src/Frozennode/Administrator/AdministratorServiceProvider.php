@@ -38,6 +38,10 @@ class AdministratorServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
+            __DIR__.'/../../config/administrator' => config_path('administrator'),
+        ]);
+
+        $this->publishes([
             __DIR__.'/../../../public' => public_path('packages/hifone/dashboard'),
         ], 'public');
 

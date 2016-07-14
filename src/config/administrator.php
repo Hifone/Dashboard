@@ -101,8 +101,7 @@ return array(
 	 */
 	'permission'=> function()
 	{
-		return true;
-		//return Auth::user()->hasRole('Founder');
+		return Auth::user()->hasRole('Founder');
 	},
 
 	/**
