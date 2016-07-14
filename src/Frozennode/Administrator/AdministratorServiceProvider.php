@@ -38,7 +38,7 @@ class AdministratorServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
-            __DIR__.'/../../../public' => public_path('packages/summerblue/administrator'),
+            __DIR__.'/../../../public' => public_path('packages/hifone/dashboard'),
         ], 'public');
 
         //set the locale
