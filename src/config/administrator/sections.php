@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '分类',
-    'single'  => '分类',
+    'title'   => trans('administrator::dashboard.sections.sections'),
+    'single'  => trans('administrator::dashboard.sections.sections'),
     'model'   => 'Hifone\Models\Section',
 
     'columns' => [
@@ -10,7 +10,7 @@ return [
             'title' => 'ID',
         ],
         'name' => [
-            'title'    => '名称',
+            'title'    => trans('administrator::dashboard.sections.name'),
             'sortable' => false,
         ],
         'slug' => [
@@ -18,7 +18,7 @@ return [
             'sortable' => false,
         ],
         'description' => [
-            'title'    => '描述',
+            'title'    => trans('administrator::dashboard.sections.description'),
             'sortable' => false,
         ],
         'operation' => [

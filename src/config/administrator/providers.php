@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '第三方接入',
-    'single'  => '第三方接入',
+    'title'   => trans('administrator::dashboard.providers.providers'),
+    'single'  => trans('administrator::dashboard.providers.providers'),
     'model'   => 'Hifone\Models\Provider',
 
     'columns' => [

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '用户',
-    'single'  => '用户',
+    'title'   => trans('administrator::dashboard.users.users'),
+    'single'  => trans('administrator::dashboard.users.users'),
     'model'=>'Hifone\Models\User',
     'columns' => [
         'id' => [

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '用户组',
-    'single'  => '用户组',
+    'title'   => trans('administrator::dashboard.roles.roles'),
+    'single'  => trans('administrator::dashboard.roles.roles'),
     'model'   => 'Hifone\Models\Role',
 
     'permission'=> function()

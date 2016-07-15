@@ -636,7 +636,7 @@ class AdminController extends Controller
     public function switchLocale($locale)
     {
         if (in_array($locale, $this->config['locales'])) {
-            $this->session->put('administrator_locale', $locale);
+            app('session')->put('administrator_locale', $locale);
         }
 
         return redirect()->back();

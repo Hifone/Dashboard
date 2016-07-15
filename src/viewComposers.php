@@ -58,13 +58,13 @@ View::composer(array('administrator::partials.header'), function ($view) {
     $view->settingsPrefix = app('admin_config_factory')->getSettingsPrefix();
     $view->pagePrefix = app('admin_config_factory')->getPagePrefix();
     $view->configType = app()->bound('itemconfig') ? app('itemconfig')->getType() : false;
+    $view->dashboardConfig = include __DIR__.'/config/administrator.php';
 });
 
 //the layout view
 View::composer(array('administrator::layouts.default'), function ($view) {
 
     $view->config = app('itemconfig');
-
     //set up the basic asset arrays
     $view->css = array();
     $view->myjs = array();

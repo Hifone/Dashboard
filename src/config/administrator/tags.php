@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '标签',
-    'single'  => '标签',
+    'title'   => trans('administrator::dashboard.tags.tags'),
+    'single'  => trans('administrator::dashboard.tags.tags'),
     'model'   => 'Hifone\Models\Tag',
 
     'columns' => [

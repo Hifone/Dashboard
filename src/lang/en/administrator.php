@@ -32,6 +32,12 @@ return array(
     'backtosite'        => 'Back to Site',
     'logout'            => 'Logout',
 
+    'nodes' => 'Nodes',
+    'users' => 'Users',
+    'content' => 'Content',
+    'misc' => 'MISC',
+    'settings' => 'Settings',
+
     'previous' => 'prev',
     'next'     => 'next',
 

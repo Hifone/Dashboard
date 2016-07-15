@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '节点',
-    'single'  => '节点',
+    'title'   => trans('administrator::dashboard.nodes.nodes'),
+    'single'  => trans('administrator::dashboard.nodes.nodes'),
     'model'   => 'Hifone\Models\Node',
 
     'columns' => [

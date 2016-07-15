@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Auth;
 
 return [
-    'title'   => '数据统计',
-    'single'  => '数据统计',
+    'title'   => trans('administrator::dashboard.stats.stats'),
+    'single'  => trans('administrator::dashboard.stats.stats'),
     'model'   => 'Hifone\Models\Stats',
 
     'permission' => function () {

@@ -68,28 +68,28 @@ return [
      *  )
      */
     'menu' => [
-        '节点管理' => [
+        'nodes' => [
             'sections',
             'nodes',
         ],
-        '用户管理' => [
+        'users' => [
             'users',
             'roles',
             'permissions',
         ],
-        '内容管理' => [
+        'content' => [
             'threads',
             'replies',
             'tags',
             'photos',
             'pages',
         ],
-        '其他设置' => [
+        'misc' => [
             'links',
             'tips',
             'locations',
         ],
-        '站点设置' => [
+        'settings' => [
             'providers',
             'stats',
             'configs',
@@ -169,6 +169,6 @@ return [
      *
      * @type array
      */
-    'locales' => [],
+    'locales' => ['en','zh-CN'],
 
 ];

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '小贴士',
-    'single'  => '小贴士',
+    'title'   => trans('administrator::dashboard.tips.tips'),
+    'single'  => trans('administrator::dashboard.tips.tips'),
     'model'   => 'Hifone\Models\Tip',
 
     'columns' => [

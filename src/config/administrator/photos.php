@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '附件图片',
-    'single'  => '附件图片',
+    'title'   => trans('administrator::dashboard.photos.photos'),
+    'single'  => trans('administrator::dashboard.photos.photos'),
     'model'   => 'Hifone\Models\Photo',
 
     'columns' => [

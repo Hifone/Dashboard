@@ -2,8 +2,8 @@
 
 return [
 
-    'title' => '系统设置',
-    'single'=>'系统设置',
+    'title'   => trans('administrator::dashboard.settings.settings'),
+    'single'  => trans('administrator::dashboard.settings.settings'),
     'model'=>'Hifone\Models\Setting',
     'columns'=>[
         'id' => [

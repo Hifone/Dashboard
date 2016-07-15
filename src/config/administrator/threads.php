@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '话题',
-    'single'  => '话题',
+    'title'   => trans('administrator::dashboard.threads.threads'),
+    'single'  => trans('administrator::dashboard.threads.threads'),
     'model'   => 'Hifone\Models\Thread',
 
     'columns' => [

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '回复',
-    'single'  => '回复',
+    'title'   => trans('administrator::dashboard.replies.replies'),
+    'single'  => trans('administrator::dashboard.replies.replies'),
     'model'   => 'Hifone\Models\Reply',
 
     'columns' => [

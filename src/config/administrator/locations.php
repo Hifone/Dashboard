@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '热点城市',
-    'single'  => '热点城市',
+    'title'   => trans('administrator::dashboard.locations.locations'),
+    'single'  => trans('administrator::dashboard.locations.locations'),
     'model'   => 'Hifone\Models\Location',
 
     'columns' => [

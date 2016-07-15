@@ -1,6 +1,6 @@
 @if (is_array($item))
 	<li class="menu">
-		<span>{{$key}}</span>
+		<span>{{ trans('administrator::administrator.'.$key)}}</span>
 		<ul>
 			@foreach ($item as $k => $subitem)
 				<?php echo view('administrator::partials.menu_item', array(

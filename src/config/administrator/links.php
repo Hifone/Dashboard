@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '友情链接',
-    'single'  => '友情链接',
+    'title'   => trans('administrator::dashboard.links.links'),
+    'single'  => trans('administrator::dashboard.links.links'),
     'model'   => 'Hifone\Models\Link',
 
     'columns' => [

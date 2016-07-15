@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '用户组权限',
-    'single'  => '用户组权限',
+    'title'   => trans('administrator::dashboard.permissions.permissions'),
+    'single'  => trans('administrator::dashboard.permissions.permissions'),
     'model'   => 'Hifone\Models\Permission',
 
     'permission' => function () {

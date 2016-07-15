@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title'   => '静态页面',
-    'single'  => '静态页面',
+    'title'   => trans('administrator::dashboard.pages.pages'),
+    'single'  => trans('administrator::dashboard.pages.pages'),
     'model'   => 'Hifone\Models\Page',
 
     'columns' => [

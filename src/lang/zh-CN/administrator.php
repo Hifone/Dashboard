@@ -32,6 +32,12 @@ return array(
     'backtosite'        => '返回主站',
     'logout'            => '退出',
 
+    'nodes' => '节点管理',
+    'users' => '用户管理',
+    'content' => '内容管理',
+    'misc' => '其他管理',
+    'settings' => '站点设置',
+
     'previous' => '上一页',
     'next'     => '下一页',
 
