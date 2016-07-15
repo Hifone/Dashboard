@@ -26,19 +26,22 @@ class AdministratorServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadViewsFrom(__DIR__.'/../../views', 'administrator');
-
+        /*
         $this->mergeConfigFrom(
             __DIR__.'/../../config/administrator.php', 'administrator'
         );
+        */
 
         $this->loadTranslationsFrom(__DIR__.'/../../lang', 'administrator');
 
+        /*
         $this->publishes([
             __DIR__.'/../../config/administrator.php' => config_path('administrator.php'),
         ]);
+        */
 
         $this->publishes([
-            __DIR__.'/../../config/administrator' => config_path('administrator'),
+            __DIR__.'/../../config/administrator' => app_path('administrator'),
         ]);
 
         $this->publishes([
@@ -85,19 +88,20 @@ class AdministratorServiceProvider extends ServiceProvider
             //return our validator instance
             return $validator;
         });
+        $arr = include __DIR__.'/../../config/administrator.php';
 
         //set up the shared instances
-        $this->app['admin_config_factory'] = $this->app->share(function ($app) {
-            return new ConfigFactory($app->make('admin_validator'), LValidator::make(array(), array()), config('administrator'));
+        $this->app['admin_config_factory'] = $this->app->share(function ($app) use ($arr){
+            return new ConfigFactory($app->make('admin_validator'), LValidator::make(array(), array()), $arr);
         });
 
         $this->app['admin_field_factory'] = $this->app->share(function ($app) {
             return new FieldFactory($app->make('admin_validator'), $app->make('itemconfig'), $app->make('db'));
         });
 
-        $this->app['admin_datatable'] = $this->app->share(function ($app) {
+        $this->app['admin_datatable'] = $this->app->share(function ($app) use($arr) {
             $dataTable = new DataTable($app->make('itemconfig'), $app->make('admin_column_factory'), $app->make('admin_field_factory'));
-            $dataTable->setRowsPerPage($app->make('session.store'), config('administrator.global_rows_per_page'));
+            $dataTable->setRowsPerPage($app->make('session.store'), $arr['global_rows_per_page']);
 
             return $dataTable;
         });

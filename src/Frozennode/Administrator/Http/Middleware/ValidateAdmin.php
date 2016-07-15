@@ -18,13 +18,15 @@ class ValidateAdmin
     {
         $configFactory = app('admin_config_factory');
 
+        $config = include __DIR__.'/../../../../config/administrator.php';
+
         //get the admin check closure that should be supplied in the config
-        $permission = config('administrator.permission');
+        $permission = $config['permission'];
 
         //if this is a simple false value, send the user to the login redirect
         if (!$response = $permission()) {
-            $loginUrl    = url(config('administrator.login_path', 'user/login'));
-            $redirectKey = config('administrator.login_redirect_key', 'redirect');
+            $loginUrl    = url($config['login_path']);
+            $redirectKey = $config['login_redirect_key'];
             $redirectUri = $request->url();
 
             return redirect()->guest($loginUrl)->with($redirectKey, $redirectUri);
@@ -37,7 +39,7 @@ class ValidateAdmin
 
         //if it's a redirect, send it back with the redirect uri
         elseif (is_a($response, 'Illuminate\\Http\\RedirectResponse')) {
-            $redirectKey = config('administrator.login_redirect_key', 'redirect');
+            $redirectKey = $config['login_redirect_key'];
             $redirectUri = $request->url();
 
             return $response->with($redirectKey, $redirectUri);

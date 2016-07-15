@@ -8,6 +8,8 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\File;
 use Illuminate\Session\SessionManager as Session;
 use Symfony\Component\HttpFoundation\File\File as SFile;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 
 /**
  * Handles all requests related to managing the data models.
@@ -35,11 +37,17 @@ class AdminController extends Controller
     protected $layout = 'administrator::layouts.default';
 
     /**
+    * @var string
+    */
+    protected $config;
+
+    /**
      * @param \Illuminate\Http\Request           $request
      * @param \Illuminate\Session\SessionManager $session
      */
     public function __construct(Request $request, Session $session)
     {
+
         $this->request = $request;
         $this->session = $session;
 
@@ -50,6 +58,13 @@ class AdminController extends Controller
 
             $this->layout->page      = false;
             $this->layout->dashboard = false;
+        }
+
+        $this->config = include __DIR__ . '/../config/administrator.php';
+
+        if(!Auth::user()->hasRole('Founder')) {
+            echo "Permission denied.";
+            exit;
         }
     }
 
@@ -186,7 +201,6 @@ class AdminController extends Controller
         }
 
         //delete the model
-        // 如果删除成功，或者数据库里面再也找不到了，就算成功
         if ($model->delete() || !$baseModel::find($id)) {
             return response()->json(array(
                 'success' => true,
@@ -356,19 +370,19 @@ class AdminController extends Controller
     public function dashboard()
     {
         //if the dev has chosen to use a dashboard
-        if (config('administrator.use_dashboard')) {
+        if ($this->config['use_dashboard']) {
             //set the layout dashboard
             $this->layout->dashboard = true;
 
             //set the layout content
-            $this->layout->content = view(config('administrator.dashboard_view'));
+            $this->layout->content = view($this->config['dashboard_view']);
 
             return $this->layout;
         }
         //else we should redirect to the menu item
         else {
             $configFactory = app('admin_config_factory');
-            $home          = config('administrator.home_page');
+            $home          = $this->config['home_page'];
 
             //first try to find it if it's a model config item
             $config = $configFactory->make($home);
@@ -621,7 +635,7 @@ class AdminController extends Controller
      */
     public function switchLocale($locale)
     {
-        if (in_array($locale, config('administrator.locales'))) {
+        if (in_array($locale, $this->config['locales'])) {
             $this->session->put('administrator_locale', $locale);
         }
 

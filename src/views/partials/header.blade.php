@@ -1,6 +1,6 @@
 <header>
 	<h1>
-		<a href="{{route('admin_dashboard')}}">{{config('administrator.title')}}</a>
+		<a href="{{route('admin_dashboard')}}">Hifone Dashboard</a>
 	</h1>
 
 	<a href="#" id="menu_button"><div></div></a>

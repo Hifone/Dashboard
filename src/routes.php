@@ -2,15 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
+$config = include __DIR__.'/config/administrator.php';
+
 /*
  * Routes
  */
-Route::group(array('domain' => config('administrator.domain'), 'prefix' => config('administrator.uri'), 'middleware' => 'Frozennode\Administrator\Http\Middleware\ValidateAdmin'), function () {
+Route::group(array('domain' => $config['domain'], 'prefix' => $config['uri'], 'middleware' => ['Frozennode\Administrator\Http\Middleware\ValidateAdmin', 'web', 'auth']), function () {
 
-    // hack by @Monkey: for custom route
-    // Route::group(['prefix' => 'custom'], function () {
-    //     require config('administrator.custom_routes_file');
-    // });
 
     //Admin Dashboard
     Route::get('/', array(

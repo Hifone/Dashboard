@@ -45,7 +45,8 @@ class Menu
         $menu = array();
 
         if (!$subMenu) {
-            $subMenu = $this->config->get('administrator.menu');
+            $arr = include __DIR__.'/../../config/administrator.php';
+            $subMenu = $arr['menu'];
         }
 
         //iterate over the menu to build the return array of valid menu items
