@@ -2,7 +2,6 @@
 
 return [
     'title'   => '用户组',
-    'heading' => '用户组',
     'single'  => '用户组',
     'model'   => 'Hifone\Models\Role',
 

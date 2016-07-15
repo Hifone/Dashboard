@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'title'   => '分类',
-    'single'  => '分类',
-    'model'   => 'Hifone\Models\Section',
+    'title'   => '静态页面',
+    'single'  => '静态页面',
+    'model'   => 'Hifone\Models\Page',
 
     'columns' => [
         'id' => [
             'title' => 'ID',
         ],
-        'name' => [
+        'title' => [
             'title'    => '名称',
             'sortable' => false,
         ],
@@ -17,7 +17,7 @@ return [
             'title'    => 'Slug',
             'sortable' => false,
         ],
-        'description' => [
+        'body' => [
             'title'    => '描述',
             'sortable' => false,
         ],
@@ -30,13 +30,13 @@ return [
         ],
     ],
     'edit_fields' => [
-        'name' => [
+        'title' => [
             'title' => '名称',
         ],
         'slug' => [
             'title' => 'Slug',
         ],
-        'description' => [
+        'body' => [
             'title' => '描述',
             'type'  => 'textarea',
         ],
@@ -45,21 +45,21 @@ return [
         'id' => [
             'title' => '标签 ID',
         ],
-        'name' => [
+        'title' => [
             'title' => '名称',
         ],
         'slug' => [
             'title' => 'Slug',
         ],
-        'description' => [
+        'body' => [
             'title' => '描述',
         ],
     ],
     'rules'   => [
-        'name' => 'required|min:1|unique:sections'
+        'title' => 'required|min:1|unique:pages'
     ],
     'messages' => [
-        'name.unique'   => '分类名在数据库里有重复，请选用其他名称。',
-        'name.required' => '请确保名字至少一个字符以上',
+        'title.unique'   => '页面标题在数据库里有重复，请选用其他名称。',
+        'title.required' => '请确保标题至少一个字符以上',
     ],
 ];

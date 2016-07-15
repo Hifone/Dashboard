@@ -2,7 +2,6 @@
 
 return [
     'title'   => '友情链接',
-    'heading' => '友情链接',
     'single'  => '友情链接',
     'model'   => 'Hifone\Models\Link',
 

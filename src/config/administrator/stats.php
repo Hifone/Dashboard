@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Auth;
 
 return [
     'title'   => '数据统计',
-    'heading' => '数据统计',
     'single'  => '数据统计',
     'model'   => 'Hifone\Models\Stats',
 

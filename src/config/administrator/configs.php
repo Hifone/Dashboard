@@ -2,8 +2,8 @@
 
 return [
 
-    'title' => 'Settings',
-    'single'=>'setting',
+    'title' => '系统设置',
+    'single'=>'系统设置',
     'model'=>'Hifone\Models\Setting',
     'columns'=>[
         'id' => [

@@ -2,7 +2,6 @@
 
 return [
     'title'   => '标签',
-    'heading' => '标签',
     'single'  => '标签',
     'model'   => 'Hifone\Models\Tag',
 

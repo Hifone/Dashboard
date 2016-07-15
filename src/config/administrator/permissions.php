@@ -2,7 +2,6 @@
 
 return [
     'title'   => '用户组权限',
-    'heading' => '用户组权限',
     'single'  => '用户组权限',
     'model'   => 'Hifone\Models\Permission',
 

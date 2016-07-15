@@ -2,7 +2,6 @@
 
 return [
     'title'   => '话题',
-    'heading' => '话题',
     'single'  => '话题',
     'model'   => 'Hifone\Models\Thread',
 

@@ -2,7 +2,6 @@
 
 return [
     'title'   => '小贴士',
-    'heading' => '小贴士',
     'single'  => '小贴士',
     'model'   => 'Hifone\Models\Tip',
 

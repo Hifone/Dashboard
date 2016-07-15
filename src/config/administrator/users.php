@@ -2,7 +2,6 @@
 
 return [
     'title'   => '用户',
-    'heading' => '用户',
     'single'  => '用户',
     'model'=>'Hifone\Models\User',
     'columns' => [

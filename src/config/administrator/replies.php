@@ -2,7 +2,6 @@
 
 return [
     'title'   => '回复',
-    'heading' => '回复',
     'single'  => '回复',
     'model'   => 'Hifone\Models\Reply',
 

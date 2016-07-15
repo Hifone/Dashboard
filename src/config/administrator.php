@@ -80,15 +80,16 @@ return [
         '内容管理' => [
             'threads',
             'replies',
-            'nodes',
             'tags',
+            'photos',
+            'pages',
         ],
         '其他设置' => [
             'links',
             'tips',
             'locations',
         ],
-        '系统设置' => [
+        '站点设置' => [
             'providers',
             'stats',
             'configs',

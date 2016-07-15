@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>{{  $config->getOption('title', '') .' - '. config('administrator.title')  }}</title>
+	<title>{{  $config->getOption('title', '') .' - Hifone Dashboard'  }}</title>
 
 	<link href="{{asset('packages/hifone/dashboard/css/app.css')}}" media="all" type="text/css" rel="stylesheet">
 	<link href="{{asset('packages/hifone/dashboard/css/main-extended.css')}}" media="all" type="text/css" rel="stylesheet">

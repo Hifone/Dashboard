@@ -2,7 +2,6 @@
 
 return [
     'title'   => '热点城市',
-    'heading' => '热点城市',
     'single'  => '热点城市',
     'model'   => 'Hifone\Models\Location',
 

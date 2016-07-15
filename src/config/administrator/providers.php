@@ -2,7 +2,6 @@
 
 return [
     'title'   => '第三方接入',
-    'heading' => '第三方接入',
     'single'  => '第三方接入',
     'model'   => 'Hifone\Models\Provider',
 

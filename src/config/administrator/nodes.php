@@ -2,7 +2,6 @@
 
 return [
     'title'   => '节点',
-    'heading' => '节点',
     'single'  => '节点',
     'model'   => 'Hifone\Models\Node',
 
