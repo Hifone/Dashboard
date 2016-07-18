@@ -32,20 +32,20 @@ return [
             'title' => 'ID',
         ],
         'day' => [
-            'title'    => '日期',
+            'title'    => trans('administrator::dashboard.stats.day'),
             'sortable' => false,
         ],
         'register_count' => [
-            'title'    => '注册用户数',
+            'title'    => trans('administrator::dashboard.stats.register_count'),
         ],
         'thread_count' => [
-            'title'    => '话题数量',
+            'title'    => trans('administrator::dashboard.stats.thread_count'),
         ],
         'reply_count' => [
-            'title'    => '回复数量',
+            'title'    => trans('administrator::dashboard.stats.reply_count'),
         ],
         'image_count' => [
-            'title'    => '图片数量',
+            'title'    => trans('administrator::dashboard.stats.image_count'),
         ],
         'operation' => [
             'title'    => trans('administrator::administrator.operation'),
@@ -55,12 +55,12 @@ return [
 
     'edit_fields' => [
         'day' => [
-            'title' => '日期',
+            'title' => trans('administrator::dashboard.stats.day'),
         ],
     ],
     'filters' => [
         'day' => [
-            'title' => '日期',
+            'title' => trans('administrator::dashboard.stats.day'),
         ],
     ],
 ];

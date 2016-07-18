@@ -31,22 +31,22 @@ return [
             'title' => 'ID',
         ],
         'name' => [
-            'title'    => '标示',
+            'title'    => trans('administrator::dashboard.permissions.name'),
             'sortable' => false,
         ],
         'display_name' => [
-            'title'    => '权限名称',
+            'title'    => trans('administrator::dashboard.permissions.display_name'),
             'sortable' => false,
         ],
         'description' => [
-            'title'    => '描述',
+            'title'    => trans('administrator::dashboard.permissions.description'),
             'sortable' => false,
             'output'   => function ($value, $model) {
                 return empty($value) ? 'N/A' : $value;
             },
         ],
         'roles' => [
-            'title'  => '用户组',
+            'title'  => trans('administrator::dashboard.roles.roles'),
             'output' => function ($value, $model) {
                 $model->load('roles');
                 $result = [];
@@ -66,24 +66,24 @@ return [
 
     'edit_fields' => [
         'name' => [
-            'title' => '标示（请慎重修改）',
+            'title' => trans('administrator::dashboard.permissions.name'),
         ],
         'display_name' => [
-            'title' => '权限名称',
+            'title' => trans('administrator::dashboard.permissions.display_name'),
         ],
         'description' => [
-            'title' => '描述',
+            'title' => trans('administrator::dashboard.permissions.description'),
         ],
     ],
     'filters' => [
         'name' => [
-            'title' => '标示',
+            'title' => trans('administrator::dashboard.permissions.name'),
         ],
         'display_name' => [
-            'title' => '权限名称',
+            'title' => trans('administrator::dashboard.permissions.display_name'),
         ],
         'description' => [
-            'title' => '描述',
+            'title' => trans('administrator::dashboard.permissions.description'),
         ],
     ],
 

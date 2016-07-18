@@ -54,9 +54,20 @@ return [
     ],
     'photos' => [
         'photos' => '图片',
+        'image' => 'Image',
+        'author' => 'Author',
     ],
     'threads'  => [
         'threads' => '话题',
+        'title' => '标题',
+        'order' => '排序',
+        'node' => '节点',
+        'is_excellent' => '是否推荐?',
+        'is_blocked' => '是否被屏蔽?',
+        'reply_count' => '回帖数',
+        'view_count' => '浏览数',
+        'favorite_count' => '被收藏数',
+        'like_count' => '被赞数',
         'add'     => [
             'title'   => '添加话题',
             'success' => '话题添加成功.',
@@ -68,12 +79,19 @@ return [
     ],
     'replies' => [
         'replies' => '回帖',
+        'thread' => '话题',
+        'author' => '作者',
+        'is_blocked' => '是否被屏蔽?',
+        'like_count' => '被赞数',
+        'body_original' => '原始内容',
         'edit'    => [
             'title' => '编辑回贴',
         ],
     ],
     'tags' => [
         'tags' => '标签',
+        'name' => '名称',
+        'count' => '被打标签内容数 ',
     ],
 
     'sections' => [
@@ -130,6 +148,11 @@ return [
 
     'stats' => [
         'stats' => '统计',
+        'day' => '日期',
+        'register_count' => '注册用户数',
+        'thread_count' => '话题数',
+        'reply_count' => '回帖数',
+        'image_count' => '图片数',
     ],
 
     'adblocks' => [
@@ -238,7 +261,10 @@ return [
     ],
 
     'permissions' => [
-        'permissions' => '用户权限',
+        'permissions' => 'Permissions',
+        'name'  => 'Name',
+        'display_name' => 'Display name',
+        'description' => 'Description',
     ],
 
     'links' => [

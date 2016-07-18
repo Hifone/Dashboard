@@ -10,7 +10,7 @@ return [
             'title' => 'ID',
         ],
         'name' => [
-            'title'    => '名称',
+            'title'    => trans('administrator::dashboard.locations.name'),
             'sortable' => false,
         ],
         'operation' => [
@@ -23,7 +23,7 @@ return [
     ],
     'edit_fields' => [
         'name' => [
-            'title' => '名称',
+            'title' => trans('administrator::dashboard.locations.name'),
             'type'  => 'text',
         ],
     ],
@@ -32,7 +32,7 @@ return [
             'title' => 'ID',
         ],
         'name' => [
-            'title' => '名称',
+            'title' => trans('administrator::dashboard.locations.name'),
         ],
     ],
 ];

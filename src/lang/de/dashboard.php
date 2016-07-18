@@ -55,9 +55,20 @@ return [
     ],
     'photos' => [
         'photos' => 'Fotos',
+        'image' => 'Image',
+        'author' => 'Author',   
     ],
     'threads'  => [
         'threads' => 'Threads',
+        'title' => 'Title',
+        'order' => 'Order',
+        'node' => 'Node',
+        'is_excellent' => 'Is excellent?',
+        'is_blocked' => 'Is blocked?',
+        'reply_count' => 'Replies',
+        'view_count' => 'Views',
+        'favorite_count' => 'Favorites',
+        'like_count' => 'Likes',
         'add'     => [
             'title'   => 'Thread erstellen',
             'success' => 'Der Thread wurde erfolgreich erstellt.',
@@ -69,12 +80,19 @@ return [
     ],
     'replies' => [
         'replies' => 'Antworten',
+        'thread' => 'Thread',
+        'author' => 'Author',
+        'is_blocked' => 'Is blocked?',
+        'like_count' => 'Likes',
+        'body_original' => 'Original Body',
         'edit'    => [
             'title' => 'Antwort bearbeiten',
         ],
     ],
     'tags' => [
         'tags' => 'Tags',
+        'name' => 'Name',
+        'count' => 'Tagged count',
     ],
 
     'sections' => [
@@ -131,6 +149,11 @@ return [
 
     'stats' => [
         'stats' => 'Statistics',
+        'day' => 'Date',
+        'register_count' => 'Registers',
+        'thread_count' => 'Threads',
+        'reply_count' => 'Replies',
+        'image_count' => 'Images',
     ],
 
     'adblocks' => [
@@ -240,6 +263,9 @@ return [
 
     'permissions' => [
         'permissions' => 'Permissions',
+        'name'  => 'Name',
+        'display_name' => 'Display name',
+        'description' => 'Description',
     ],
 
     'links' => [

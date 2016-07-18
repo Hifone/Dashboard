@@ -11,7 +11,7 @@ return [
             'title' => 'ID',
         ],
         'user' => [
-            'title'    => '用户',
+            'title'    => trans('administrator::dashboard.replies.author'),
             'sortable' => false,
             'output'   => function ($value, $model) {
                 return admin_link(
@@ -22,7 +22,7 @@ return [
             },
         ],
         'thread' => [
-            'title'    => '话题',
+            'title'    => trans('administrator::dashboard.replies.thread'),
             'sortable' => false,
             'output'   => function ($value, $model) {
                 return admin_link(
@@ -32,11 +32,11 @@ return [
                 );
             },
         ],
-        'is_block' => [
-            'title'    => '是否被屏蔽',
+        'is_blocked' => [
+            'title'    => trans('administrator::dashboard.replies.is_blocked'),
         ],
-        'vote_count' => [
-            'title'    => '投票数量',
+        'like_count' => [
+            'title'    => trans('administrator::dashboard.replies.like_count'),
         ],
         'operation' => [
             'title'  => trans('administrator::administrator.operation'),
@@ -48,7 +48,7 @@ return [
     ],
     'edit_fields' => [
         'user' => [
-            'title'              => '用户',
+            'title'              => trans('administrator::dashboard.replies.author'),
             'type'               => 'relationship',
             'name_field'         => 'name',
             'autocomplete'       => true,
@@ -56,7 +56,7 @@ return [
             'options_sort_field' => 'id',
         ],
         'thread' => [
-            'title'              => '话题',
+            'title'              => trans('administrator::dashboard.replies.thread'),
             'type'               => 'relationship',
             'name_field'         => 'title',
             'autocomplete'       => true,
@@ -64,54 +64,54 @@ return [
             'options_sort_field' => 'id',
         ],
         'body_original' => [
-            'title'    => 'Markdown 原始内容',
-            'hint'     => '请使用 Markdown 格式填写',
+            'title'    => 'Markdown body',
+            'hint'     => 'support Markdown',
             'type'     => 'textarea',
         ],
-        'is_block' => [
-            'title'    => '是否被屏蔽',
+        'is_blocked' => [
+            'title'    => trans('administrator::dashboard.replies.is_blocked'),
             'type'     => 'enum',
             'options'  => [
-                'yes' => '是',
-                'no'  => '否',
+                'yes' => 'Yes',
+                'no'  => 'No',
             ],
             'value' => 'no',
         ],
-        'vote_count' => [
-            'title'    => '投票数量',
+        'like_count' => [
+            'title'    => trans('administrator::dashboard.replies.like_count'),
         ],
     ],
     'filters' => [
         'user' => [
-            'title'              => '用户',
+            'title'              => trans('administrator::dashboard.replies.author'),
             'type'               => 'relationship',
-            'name_field'         => 'name',
+            'name_field'         => 'username',
             'autocomplete'       => true,
-            'search_fields'      => array("CONCAT(id, ' ', name)"),
+            'search_fields'      => array("CONCAT(id, ' ', username)"),
             'options_sort_field' => 'id',
         ],
         'thread' => [
-            'title'              => '话题',
+            'title'              => trans('administrator::dashboard.replies.thread'),
             'type'               => 'relationship',
             'name_field'         => 'title',
             'autocomplete'       => true,
             'search_fields'      => array("CONCAT(id, ' ', title)"),
             'options_sort_field' => 'id',
         ],
-        'is_block' => [
-            'title'    => '是否被屏蔽',
+        'is_blocked' => [
+            'title'    => trans('administrator::dashboard.replies.is_blocked'),
             'type'     => 'enum',
             'options'  => [
-                'yes' => '是',
-                'no'  => '否',
+                'yes' => 'Yes',
+                'no'  => 'No',
             ],
         ],
         'body_original' => [
-            'title'    => '回复内容',
+            'title'    => trans('administrator::dashboard.replies.body_original'),
         ],
-        'vote_count' => [
+        'like_count' => [
             'type'                => 'number',
-            'title'               => '查看次数',
+            'title'               => trans('administrator::dashboard.replies.like_count'),
             'thousands_separator' => ',', //optional, defaults to ','
             'decimal_separator'   => '.',   //optional, defaults to '.'
         ],
@@ -120,6 +120,6 @@ return [
         'body_original' => 'required'
     ],
     'messages' => [
-        'body_original.required' => '请填写回复内容',
+        'body_original.required' => 'body_original is required.',
     ],
 ];

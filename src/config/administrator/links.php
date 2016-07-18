@@ -10,15 +10,15 @@ return [
             'title' => 'ID',
         ],
         'title' => [
-            'title'    => '名称',
+            'title'    => trans('administrator::dashboard.links.title'),
             'sortable' => false,
         ],
         'url' => [
-            'title'    => '链接',
+            'title'    => trans('administrator::dashboard.links.url'),
             'sortable' => false,
         ],
         'cover' => [
-            'title'    => '图片',
+            'title'    => trans('administrator::dashboard.links.cover'),
             'output' => function ($value) {
                 return empty($value) ? 'N/A' : <<<EOD
     <img src="$value" width="180">
@@ -36,21 +36,21 @@ EOD;
     ],
     'edit_fields' => [
         'title' => [
-            'title'    => '名称',
+            'title'    => trans('administrator::dashboard.links.title'),
         ],
         'url' => [
-            'title'    => '链接',
+            'title'    => trans('administrator::dashboard.links.url'),
         ],
         'cover' => [
-            'title'    => '图片',
+            'title'    => trans('administrator::dashboard.links.cover'),
         ],
     ],
     'filters' => [
         'id' => [
-            'title' => '标签 ID',
+            'title' => 'ID',
         ],
         'title' => [
-            'title' => '名称',
+            'title' => trans('administrator::dashboard.links.title'),
         ],
     ],
 ];

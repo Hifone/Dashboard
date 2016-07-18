@@ -11,14 +11,14 @@ return [
             'title' => 'ID',
         ],
         'title' => [
-            'title'    => '标题',
+            'title'    => trans('administrator::dashboard.threads.title'),
             'sortable' => false,
         ],
         'order' => [
-            'title'    => '排序',
+            'title'    => trans('administrator::dashboard.threads.order'),
         ],
         'user' => [
-            'title'    => '用户',
+            'title'    => trans('administrator::dashboard.users.username'),
             'sortable' => false,
             'output'   => function ($value, $model) {
                 return admin_link(
@@ -29,7 +29,7 @@ return [
             },
         ],
         'node' => [
-            'title'    => '分类',
+            'title'    => trans('administrator::dashboard.threads.node'),
             'sortable' => false,
             'output'   => function ($value, $model) {
                 return admin_link(
@@ -40,22 +40,22 @@ return [
             },
         ],
         'is_excellent' => [
-            'title'    => '是否是推荐',
+            'title'    => trans('administrator::dashboard.threads.is_excellent'),
         ],
         'is_blocked' => [
-            'title'    => '是否被屏蔽',
+            'title'    => trans('administrator::dashboard.threads.is_blocked'),
         ],
         'reply_count' => [
-            'title'    => '回帖数量',
+            'title'    => trans('administrator::dashboard.threads.reply_count'),
         ],
         'view_count' => [
-            'title'    => '查看数量',
+            'title'    => trans('administrator::dashboard.threads.view_count'),
         ],
         'favorite_count' => [
-            'title'    => '收藏数量',
+            'title'    => trans('administrator::dashboard.threads.favorite_count'),
         ],
         'like_count' => [
-            'title'    => '被赞数量',
+            'title'    => trans('administrator::dashboard.threads.like_count'),
         ],
 
         'operation' => [
@@ -68,11 +68,11 @@ return [
     ],
     'edit_fields' => [
         'title' => [
-            'title'    => '标题',
+            'title'    => trans('administrator::dashboard.threads.title'),
             'sortable' => false,
         ],
         'user' => [
-            'title'              => '用户',
+            'title'              => trans('administrator::dashboard.users.username'),
             'type'               => 'relationship',
             'name_field'         => 'username',
             'autocomplete'       => true,
@@ -80,57 +80,57 @@ return [
             'options_sort_field' => 'id',
         ],
         'node' => [
-            'title'              => '分类',
+            'title'              => trans('administrator::dashboard.threads.node'),
             'type'               => 'relationship',
             'name_field'         => 'name',
             'search_fields'      => array("CONCAT(id, ' ', name)"),
             'options_sort_field' => 'id',
         ],
         'body_original' => [
-            'title'    => 'Markdown 原始内容',
-            'hint'     => '请使用 Markdown 格式填写',
+            'title'    => 'Markdown content',
+            'hint'     => 'support Markdown',
             'type'     => 'textarea',
         ],
         'order' => [
-            'title'    => '排序',
+            'title'    => trans('administrator::dashboard.threads.order'),
         ],
         'is_excellent' => [
-            'title'    => '是否是推荐',
+            'title'    => trans('administrator::dashboard.threads.is_excellent'),
             'type'     => 'enum',
             'options'  => [
-                'yes' => '是',
-                'no'  => '否',
+                'yes' => 'Yes',
+                'no'  => 'No',
             ],
             'value' => 'no',
         ],
         'is_blocked' => [
-            'title'    => '是否被屏蔽',
+            'title'    => trans('administrator::dashboard.threads.is_blocked'),
             'type'     => 'enum',
             'options'  => [
-                'yes' => '是',
-                'no'  => '否',
+                'yes' => 'Yes',
+                'no'  => 'No',
             ],
             'value' => 'no',
         ],
         'reply_count' => [
-            'title'    => '回帖数量',
+            'title'    => trans('administrator::dashboard.threads.reply_count'),
         ],
         'view_count' => [
-            'title'    => '查看数量',
+            'title'    => trans('administrator::dashboard.threads.view_count'),
         ],
         'favorite_count' => [
-            'title'    => '收藏数量',
+            'title'    => trans('administrator::dashboard.threads.favorite_count'),
         ],
         'like_count' => [
-            'title'    => '被赞数量',
+            'title'    => trans('administrator::dashboard.threads.like_count'),
         ],
     ],
     'filters' => [
         'id' => [
-            'title' => '内容 ID',
+            'title' => 'ID',
         ],
         'user' => [
-            'title'              => '用户',
+            'title'              => trans('administrator::dashboard.users.username'),
             'type'               => 'relationship',
             'name_field'         => 'name',
             'autocomplete'       => true,
@@ -138,39 +138,39 @@ return [
             'options_sort_field' => 'id',
         ],
         'node' => [
-            'title'              => '分类',
+            'title'              => trans('administrator::dashboard.threads.node'),
             'type'               => 'relationship',
             'name_field'         => 'name',
             'search_fields'      => array("CONCAT(id, ' ', screen_name)"),
             'options_sort_field' => 'id',
         ],
         'body_original' => [
-            'title'    => 'Markdown 原始内容',
+            'title'    => 'Markdown content',
         ],
         'order' => [
-            'title'    => '排序',
+            'title'    => trans('administrator::dashboard.threads.order'),
         ],
         'is_excellent' => [
-            'title'    => '是否是推荐',
+            'title'    => trans('administrator::dashboard.threads.is_excellent'),
             'type'     => 'enum',
             'options'  => [
-                'yes' => '是',
-                'no'  => '否',
+                'yes' => 'Yes',
+                'no'  => 'No',
             ],
             'value' => 'no',
         ],
         'is_blocked' => [
-            'title'    => '是否被屏蔽',
+            'title'    => trans('administrator::dashboard.threads.is_blocked'),
             'type'     => 'enum',
             'options'  => [
-                'yes' => '是',
-                'no'  => '否',
+                'yes' => 'Yes',
+                'no'  => 'No',
             ],
             'value' => 'no',
         ],
         'view_count' => [
             'type'                => 'number',
-            'title'               => '查看次数',
+            'title'               => trans('administrator::dashboard.threads.view_count'),
             'thousands_separator' => ',', //optional, defaults to ','
             'decimal_separator'   => '.',   //optional, defaults to '.'
         ],
@@ -179,6 +179,6 @@ return [
         'title' => 'required'
     ],
     'messages' => [
-        'title.required' => '请填写标题',
+        'title.required' => 'title is required.',
     ],
 ];

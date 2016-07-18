@@ -10,7 +10,7 @@ return [
             'title' => 'ID',
         ],
         'name' => [
-            'title'    => '名称',
+            'title'    => trans('administrator::dashboard.tags.name'),
             'sortable' => false,
         ],
         'slug' => [
@@ -18,7 +18,7 @@ return [
             'sortable' => false,
         ],
         'count' => [
-            'title'    => '打过标签的内容数量',
+            'title'    => trans('administrator::dashboard.tags.count'),
             'sortable' => false,
         ],
         'operation' => [
@@ -31,18 +31,18 @@ return [
     ],
     'edit_fields' => [
         'name' => [
-            'title' => '名称',
+            'title' => trans('administrator::dashboard.tags.name'),
         ],
         'slug' => [
-            'title' => 'Slug',
+            'title' => trans('administrator::dashboard.tags.slug'),
         ],
     ],
     'filters' => [
         'id' => [
-            'title' => '标签 ID',
+            'title' => 'ID',
         ],
         'name' => [
-            'title' => '名称',
+            'title' => trans('administrator::dashboard.tags.name'),
         ],
     ],
     'actions' => [],

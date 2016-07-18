@@ -10,7 +10,7 @@ return [
             'title' => 'ID',
         ],
         'image' => [
-            'title'    => '图片',
+            'title'    => trans('administrator::dashboard.photos.image'),
             'output' => function ($value) {
                 return empty($value) ? 'N/A' : <<<EOD
     <img src="$value" width="80">
@@ -19,7 +19,7 @@ EOD;
             'sortable' => false,
         ],
         'user' => [
-            'title'    => '用户',
+            'title'    => trans('administrator::dashboard.photos.author'),
             'sortable' => false,
             'output'   => function ($value, $model) {
                 return admin_link(
@@ -39,11 +39,11 @@ EOD;
     ],
     'edit_fields' => [
         'image' => [
-            'title' => '图片',
+            'title' => trans('administrator::dashboard.photos.image'),
             'type'  => 'textarea',
         ],
         'user' => [
-            'title'              => '用户',
+            'title'              => trans('administrator::dashboard.photos.author'),
             'type'               => 'relationship',
             'name_field'         => 'username',
             'autocomplete'       => true,
@@ -56,10 +56,10 @@ EOD;
             'title' => 'ID',
         ],
         'image' => [
-            'title' => '图片',
+            'title' => trans('administrator::dashboard.photos.image'),
         ],
         'user' => [
-            'title'              => '用户',
+            'title'              => trans('administrator::dashboard.photos.author'),
             'type'               => 'relationship',
             'name_field'         => 'username',
             'autocomplete'       => true,

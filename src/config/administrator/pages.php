@@ -10,15 +10,15 @@ return [
             'title' => 'ID',
         ],
         'title' => [
-            'title'    => '名称',
+            'title'    => trans('administrator::dashboard.pages.title'),
             'sortable' => false,
         ],
         'slug' => [
-            'title'    => 'Slug',
+            'title'    => trans('administrator::dashboard.pages.slug'),
             'sortable' => false,
         ],
         'body' => [
-            'title'    => '描述',
+            'title'    => trans('administrator::dashboard.pages.body'),
             'sortable' => false,
         ],
         'operation' => [
@@ -31,28 +31,28 @@ return [
     ],
     'edit_fields' => [
         'title' => [
-            'title' => '名称',
+            'title' => trans('administrator::dashboard.pages.title'),
         ],
         'slug' => [
-            'title' => 'Slug',
+            'title' => trans('administrator::dashboard.pages.slug'),
         ],
         'body' => [
-            'title' => '描述',
+            'title' => trans('administrator::dashboard.pages.body'),
             'type'  => 'textarea',
         ],
     ],
     'filters' => [
         'id' => [
-            'title' => '标签 ID',
+            'title' => 'ID',
         ],
         'title' => [
-            'title' => '名称',
+            'title' => trans('administrator::dashboard.pages.title'),
         ],
         'slug' => [
-            'title' => 'Slug',
+            'title' => trans('administrator::dashboard.pages.slug'),
         ],
         'body' => [
-            'title' => '描述',
+            'title' => trans('administrator::dashboard.pages.body'),
         ],
     ],
     'rules'   => [
