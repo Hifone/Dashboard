@@ -97,8 +97,7 @@ return [
     'nodes' => [
         'nodes'           => 'Nodes',
         'name'            => 'Name',
-        'parent'          => 'Parent Node',
-        'root'            => 'Root Node',
+        'parent'          => 'Section of node',
         'status_name'     => 'Status',
         'description'     => 'Description',
         'icon'            => 'Node Icon',
@@ -125,6 +124,8 @@ return [
 
     'providers' => [
         'providers' => 'Providers',
+        'name'      => 'Name',
+        'slug'      => 'Slug',
     ],
 
     'stats' => [
@@ -211,11 +212,14 @@ return [
         'users'       => 'Users',
         'user'        => ':email, registed on :date',
         'username'    => 'Username',
+        'nickname'    => 'Nickname',
+        'avatar'      => 'Avatar',
         'email'       => 'Email',
         'password'    => 'Password',
         'description' => 'User list',
         'search'      => 'Search',
         'roles'       => 'Roles',
+        'is_banned'   => 'Is banned?',
         'add'         => [
             'title'   => 'Create',
             'success' => 'User is created successfully.',
@@ -229,6 +233,8 @@ return [
 
     'roles' => [
         'roles' => 'Roles',
+        'name'  => 'Name',
+        'display_name' => 'Display name',
     ],
 
     'permissions' => [

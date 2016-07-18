@@ -39,7 +39,7 @@ return [
             'title'    => '投票数量',
         ],
         'operation' => [
-            'title'  => '管理',
+            'title'  => trans('administrator::administrator.operation'),
             'output' => function ($value, $model) {
 
             },

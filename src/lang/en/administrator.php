@@ -17,6 +17,7 @@ return array(
     'loading'           => 'Loading...',
     'createnew'         => 'Create New',
     'new'               => 'New',
+    'operation'         => 'Manage',
     'viewitem'          => 'View :single',
     'id'                => 'ID',
     'uploadimage'       => 'Upload Image',

@@ -10,15 +10,15 @@ return [
             'title' => 'ID',
         ],
         'name' => [
-            'title'    => '名称',
+            'title'    => trans('administrator::dashboard.providers.name'),
             'sortable' => false,
         ],
         'slug' => [
-            'title'    => '标识',
+            'title'    => trans('administrator::dashboard.providers.slug'),
             'sortable' => false,
         ],
         'operation' => [
-            'title'  => '管理',
+            'title'  => trans('administrator::administrator.operation'),
             'output' => function ($value, $model) {
                 return $value;
             },
@@ -27,11 +27,11 @@ return [
     ],
     'edit_fields' => [
         'name' => [
-            'title' => '名称',
+            'title' => trans('administrator::dashboard.providers.name'),
             'type'  => 'text',
         ],
         'slug' => [
-            'title' => '标识',
+            'title' => trans('administrator::dashboard.providers.slug'),
             'type'  => 'text',
         ],
     ],
@@ -40,10 +40,10 @@ return [
             'title' => 'ID',
         ],
         'name' => [
-            'title' => '名称',
+            'title' => trans('administrator::dashboard.providers.name'),
         ],
         'slug' => [
-            'title' => '标识',
+            'title' => trans('administrator::dashboard.providers.slug'),
         ],
     ],
 ];

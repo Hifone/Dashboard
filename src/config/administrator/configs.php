@@ -16,7 +16,7 @@ return [
             'title' => 'Value',
         ],
         'operation' => [
-            'title'  => '管理',
+            'title'  => trans('administrator::administrator.operation'),
             'output' => function ($value, $model) {
                 return $value;
             },
@@ -36,10 +36,10 @@ return [
             'title' => 'ID',
         ],
         'name' => [
-            'title' => '变量名',
+            'title' => 'Name',
         ],
         'value' => [
-            'title' => '变量值',
+            'title' => 'Value',
         ],
     ],
 ];

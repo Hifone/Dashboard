@@ -59,7 +59,7 @@ return [
             'sortable' => false,
         ],
         'operation' => [
-            'title'    => '管理',
+            'title'    => trans('administrator::administrator.operation'),
             'sortable' => false,
         ],
     ],

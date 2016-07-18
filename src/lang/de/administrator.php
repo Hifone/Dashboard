@@ -17,6 +17,7 @@ return array(
     'loading'           => 'Laden...',
     'createnew'         => 'Neu erstellen',
     'new'               => 'Neu',
+    'operation'         => 'Manage',
     'viewitem'          => ':single anzeigen',
     'id'                => 'ID',
     'uploadimage'       => 'Bild hochladen',

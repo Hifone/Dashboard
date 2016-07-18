@@ -10,11 +10,11 @@ return [
             'title' => 'ID',
         ],
         'body' => [
-            'title'    => '内容',
+            'title'    => trans('administrator::dashboard.tips.body'),
             'sortable' => false,
         ],
         'operation' => [
-            'title'  => '管理',
+            'title'  => trans('administrator::administrator.operation'),
             'output' => function ($value, $model) {
                 return $value;
             },
@@ -23,16 +23,16 @@ return [
     ],
     'edit_fields' => [
         'body' => [
-            'title' => '内容',
+            'title' => trans('administrator::dashboard.tips.body'),
             'type'  => 'textarea',
         ],
     ],
     'filters' => [
         'id' => [
-            'title' => '标签 ID',
+            'title' => 'ID',
         ],
         'body' => [
-            'title' => '内容',
+            'title' => trans('administrator::dashboard.tips.body'),
         ],
     ],
 ];

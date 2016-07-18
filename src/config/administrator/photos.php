@@ -30,7 +30,7 @@ EOD;
             },
         ],
         'operation' => [
-            'title'  => '管理',
+            'title'  => trans('administrator::administrator.operation'),
             'output' => function ($value, $model) {
                 return $value;
             },
@@ -53,7 +53,7 @@ EOD;
     ],
     'filters' => [
         'id' => [
-            'title' => '图片 ID',
+            'title' => 'ID',
         ],
         'image' => [
             'title' => '图片',
@@ -61,7 +61,7 @@ EOD;
         'user' => [
             'title'              => '用户',
             'type'               => 'relationship',
-            'name_field'         => 'name',
+            'name_field'         => 'username',
             'autocomplete'       => true,
             'search_fields'      => array("CONCAT(id, ' ', username)"),
             'options_sort_field' => 'id',

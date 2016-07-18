@@ -16,14 +16,14 @@ return [
             'title' => 'ID',
         ],
         'display_name' => [
-            'title' => '显示名称',
+            'title' => trans('administrator::dashboard.roles.display_name'),
             'sortable' => false
         ],
         'name' => [
-            'title' => '标识'
+            'title' => trans('administrator::dashboard.roles.name')
         ],
         'operation' => [
-            'title'  => '管理',
+            'title'  => trans('administrator::administrator.operation'),
             'output' => function ($value, $model) {
                 return $value;
             },
@@ -33,10 +33,10 @@ return [
 
     'edit_fields' => [
         'display_name' => [
-            'title' => '显示名称',
+            'title' => trans('administrator::dashboard.roles.display_name'),
         ],
         'name' => [
-            'title' => '标识',
+            'title' => trans('administrator::dashboard.roles.name'),
         ],
         'perms' => array(
             'type' => 'relationship',
@@ -50,10 +50,10 @@ return [
             'title' => 'ID',
         ],
         'display_name' => [
-            'title' => '显示名称'
+            'title' => trans('administrator::dashboard.roles.display_name')
         ],
         'name' => [
-            'title' => '标识',
+            'title' => trans('administrator::dashboard.roles.name'),
         ]
     ],
 

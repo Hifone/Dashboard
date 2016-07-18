@@ -124,6 +124,8 @@ return [
 
     'providers' => [
         'providers' => '第三方接入商',
+        'name'      => '名称',
+        'slug'      => '标识',
     ],
 
     'stats' => [
@@ -210,11 +212,14 @@ return [
         'users'       => '用户',
         'user'        => ':email, 注册于 :date',
         'username'    => '用户名',
+        'nickname'    => '昵称',
+        'avatar'      => '头像',
         'email'       => '邮箱地址',
         'password'    => '密码',
         'description' => '用户列表',
         'search'      => '搜索',
         'roles'       => '所属角色',
+        'is_banned'   => '是否屏蔽?',
         'add'         => [
             'title'   => '注册用户',
             'success' => '用户注册成功.',
@@ -227,7 +232,9 @@ return [
     ],
 
     'roles' => [
-        'roles' => '用户角色',
+        'roles' => '角色',
+        'name'  => '名称',
+        'display_name' => '显示名称',
     ],
 
     'permissions' => [

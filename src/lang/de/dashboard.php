@@ -125,6 +125,8 @@ return [
 
     'providers' => [
         'providers' => 'Providers',
+        'name'      => 'Name',
+        'slug'      => 'Slug',
     ],
 
     'stats' => [
@@ -211,11 +213,14 @@ return [
         'users'       => 'Benutzer',
         'user'        => ':email, Registriert: :date',
         'username'    => 'Benutzername',
+        'nickname'    => 'Nickname',
+        'avatar'      => 'Avatar',
         'email'       => 'E-Mail',
         'password'    => 'Passwort',
         'description' => 'Beschreibung',
         'search'      => 'Suche',
         'roles'       => 'Rollen',
+        'is_banned'   => 'Is banned?',
         'add'         => [
             'title'   => 'Benutzer hinzufügen',
             'success' => 'Der Benutzer wurde erstellt.',
@@ -229,6 +234,8 @@ return [
 
     'roles' => [
         'roles' => 'Roles',
+        'name'  => 'Name',
+        'display_name' => 'Display name',
     ],
 
     'permissions' => [

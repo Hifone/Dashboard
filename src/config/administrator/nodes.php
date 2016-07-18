@@ -10,7 +10,7 @@ return [
             'title' => 'ID',
         ],
         'name' => [
-            'title'    => '名称',
+            'title'    => trans('administrator::dashboard.nodes.name'),
             'sortable' => false,
         ],
         'slug' => [
@@ -18,11 +18,11 @@ return [
             'sortable' => false,
         ],
         'description' => [
-            'title'    => '描述',
+            'title'    => trans('administrator::dashboard.nodes.description'),
             'sortable' => false,
         ],
         'section' => [
-            'title'    => '分类',
+            'title'    => trans('administrator::dashboard.nodes.parent'),
             'sortable' => false,
             'output'   => function ($value, $model) {
                 return admin_link(
@@ -33,7 +33,7 @@ return [
             },
         ],
         'operation' => [
-            'title'  => '管理',
+            'title'  => trans('administrator::administrator.operation'),
             'output' => function ($value, $model) {
                 return $value;
             },
@@ -42,17 +42,17 @@ return [
     ],
     'edit_fields' => [
         'name' => [
-            'title' => '名称',
+            'title' => trans('administrator::dashboard.nodes.name'),
         ],
         'slug' => [
             'title' => 'Slug',
         ],
         'description' => [
-            'title' => '描述',
+            'title' => trans('administrator::dashboard.nodes.description'),
             'type' => 'textarea',
         ],
         'section' => [
-            'title'              => '分类',
+            'title'              => trans('administrator::dashboard.nodes.parent'),
             'type'               => 'relationship',
             'name_field'         => 'name',
             'search_fields'      => array("CONCAT(id, ' ', name)"),
@@ -61,22 +61,22 @@ return [
     ],
     'filters' => [
         'id' => [
-            'title' => '标签 ID',
+            'title' => 'ID',
         ],
         'name' => [
-            'title' => '名称',
+            'title' => trans('administrator::dashboard.nodes.name'),
         ],
         'slug' => [
             'title' => 'Slug',
         ],
         'description' => [
-            'title' => '描述',
+            'title' => trans('administrator::dashboard.nodes.description'),
         ],
         'section' => [
-            'title'              => '分类',
+            'title'              => trans('administrator::dashboard.nodes.parent'),
             'type'               => 'relationship',
             'name_field'         => 'name',
-            'search_fields'      => array("CONCAT(id, ' ', screen_name)"),
+            'search_fields'      => array("CONCAT(id, ' ', name)"),
             'options_sort_field' => 'id',
         ],
     ],

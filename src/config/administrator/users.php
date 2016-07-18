@@ -9,7 +9,7 @@ return [
             'title' => 'ID',
         ],
         'avatar_url' => [
-            'title'  => '头像',
+            'title'  => trans('administrator::dashboard.users.avatar'),
             'output' => function ($value) {
                 return empty($value) ? 'N/A' : <<<EOD
     <img src="$value" width="80">
@@ -18,21 +18,21 @@ EOD;
             'sortable' => false,
         ],
         'username' => [
-            'title'    => '用户名',
+            'title'    => trans('administrator::dashboard.users.username'),
             'sortable' => false,
         ],
         'nickname' => [
-            'title'    => '真实姓名',
+            'title'    => trans('administrator::dashboard.users.nickname'),
             'sortable' => false,
         ],
         'email' => [
-            'title' => '邮箱',
+            'title' => trans('administrator::dashboard.users.email'),
         ],
         'is_banned' => [
-            'title' => '是否被屏蔽',
+            'title' => trans('administrator::dashboard.users.is_banned'),
         ],
         'operation' => [
-            'title'  => '管理',
+            'title'  => trans('administrator::administrator.operation'),
             'output' => function ($value, $model) {
                 return $value;
             },
@@ -41,21 +41,21 @@ EOD;
     ],
     'edit_fields' => [
         'username' => [
-            'title' => '用户名',
+            'title' => trans('administrator::dashboard.users.username'),
         ],
         'email' => [
-            'title' => '邮箱',
+            'title' => trans('administrator::dashboard.users.email'),
         ],
         'is_banned' => [
-            'title'    => '是否被屏蔽',
+            'title'    => trans('administrator::dashboard.users.is_banned'),
             'type'     => 'enum',
             'options'  => [
-                'yes' => '是',
-                'no'  => '否',
+                'yes' => 'Yes',
+                'no'  => 'No',
             ],
         ],
         'avatar_url' => [
-            'title' => '头像 URL'
+            'title' => trans('administrator::dashboard.users.avatar')
         ],
         'location' => [
             'title' => '所处城市'
@@ -70,38 +70,38 @@ EOD;
             'title' => '个性签名'
         ],
         'nickname' => [
-            'title' => '真实姓名'
+            'title' => trans('administrator::dashboard.users.nickname')
         ],
         'roles' => array(
             'type'       => 'relationship',
-            'title'      => '用户组',
+            'title'      => trans('administrator::dashboard.roles.roles'),
             'name_field' => 'display_name',
         ),
     ],
     'filters' => [
         'id' => [
-            'title' => '用户 ID',
+            'title' => 'ID',
         ],
-        'name' => [
-            'title' => '姓名',
+        'username' => [
+            'title' => trans('administrator::dashboard.users.username'),
         ],
         'nickname' => [
-            'title' => '昵称'
+            'title' => trans('administrator::dashboard.users.nickname')
         ],
         'email' => [
-            'title' => '邮箱',
+            'title' => trans('administrator::dashboard.users.email'),
         ],
         'roles' => [
             'type'       => 'relationship',
-            'title'      => '用户组',
+            'title'      => trans('administrator::dashboard.roles.roles'),
             'name_field' => 'display_name',
         ],
         'is_banned' => [
-            'title'    => '是否被屏蔽',
+            'title'    => trans('administrator::dashboard.users.is_banned'),
             'type'     => 'enum',
             'options'  => [
-                'yes' => '是',
-                'no'  => '否',
+                'yes' => 'Yes',
+                'no'  => 'No',
             ],
         ],
     ],

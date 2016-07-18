@@ -48,7 +48,7 @@ return [
             'title'    => '图片数量',
         ],
         'operation' => [
-            'title'    => '管理',
+            'title'    => trans('administrator::administrator.operation'),
             'sortable' => false,
         ],
     ],

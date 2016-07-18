@@ -17,6 +17,7 @@ return array(
     'loading'           => '载入中...',
     'createnew'         => '新建',
     'new'               => '新建',
+    'operation'         => '管理',
     'viewitem'          => '查看 :single',
     'id'                => 'ID',
     'uploadimage'       => '上传图片',
