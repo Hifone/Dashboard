@@ -86,6 +86,11 @@ return [
             'photos',
             'pages',
         ],
+        'advertisements' => [
+            'adblocks',
+            'adspaces',
+            'advertisements',
+        ],
         'misc' => [
             'links',
             'tips',

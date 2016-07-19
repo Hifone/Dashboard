@@ -36,6 +36,7 @@ return array(
     'nodes' => '节点管理',
     'users' => '用户管理',
     'content' => '内容管理',
+    'advertisements' => '广告管理',
     'misc' => '其他管理',
     'settings' => '站点设置',
 

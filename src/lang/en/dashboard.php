@@ -173,6 +173,8 @@ return [
         'name'     => 'Name',
         'position' => 'Slug',
         'route'    => 'Route',
+        'order'    => 'Order',
+        'adblock'  => 'Adblock',
         'add'      => [
             'title'   => 'New Adspace',
             'success' => 'Adspace is created successfully.',
@@ -186,6 +188,7 @@ return [
         'advertisements' => 'Advertisements',
         'name'           => 'Name',
         'body'           => 'Body',
+        'adspace'        => 'Adspace',
         'add'            => [
             'title'   => 'New Advertisement',
             'success' => 'Advertisement is created successfully.',

@@ -157,15 +157,15 @@ return [
     ],
 
     'adblocks' => [
-        'adblocks' => '广告位类型',
+        'adblocks' => '广告位区域',
         'name'     => '名称',
         'slug'     => '标识',
         'add'      => [
-            'title'   => '添加广告位类型',
-            'success' => '广告位类型添加成功.',
+            'title'   => '添加广告位区域',
+            'success' => '广告位区域添加成功.',
         ],
         'edit' => [
-            'success' => '广告位类型信息更新成功.',
+            'success' => '广告位区域信息更新成功.',
         ],
     ],
     'adspaces' => [
@@ -173,6 +173,8 @@ return [
         'name'     => '名称',
         'position' => '位置标识',
         'route'    => '投放范围',
+        'order'    => '排序',
+        'adblock'  => '所属广告位区域',
         'add'      => [
             'title'   => '添加广告位',
             'success' => '广告位添加成功.',
@@ -186,6 +188,7 @@ return [
         'advertisements' => '广告',
         'name'           => '广告名称',
         'body'           => '广告内容',
+        'adspace'        => '广告位',
         'add'            => [
             'title'   => '添加广告',
             'success' => '广告添加成功.',

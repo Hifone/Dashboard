@@ -36,6 +36,7 @@ return array(
     'nodes' => 'Nodes',
     'users' => 'Users',
     'content' => 'Content',
+    'advertisements' => 'Advertisements',
     'misc' => 'MISC',
     'settings' => 'Settings',
 

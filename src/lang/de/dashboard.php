@@ -174,6 +174,8 @@ return [
         'name'     => 'Name',
         'position' => 'Position',
         'route'    => 'Route',
+        'order'    => 'Order',
+        'adblock'  => 'Adblock',
         'add'      => [
             'title'   => 'Werbeplatz hinzufügen',
             'success' => 'Der Werbeplatz wurde erstellt.',
@@ -187,6 +189,7 @@ return [
         'advertisements' => 'Anzeigen',
         'name'           => 'Name',
         'body'           => 'Inhalt',
+        'adspace'        => 'Adspace',
         'add'            => [
             'title'   => 'Anzeige erstellen',
             'success' => 'Die Anzeige wurde erstellt.',
