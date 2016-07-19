@@ -13,14 +13,6 @@ return [
             'title'    => trans('administrator::dashboard.sections.name'),
             'sortable' => false,
         ],
-        'slug' => [
-            'title'    => 'Slug',
-            'sortable' => false,
-        ],
-        'description' => [
-            'title'    => trans('administrator::dashboard.sections.description'),
-            'sortable' => false,
-        ],
         'operation' => [
             'title'  => trans('administrator::administrator.operation'),
             'output' => function ($value, $model) {
@@ -31,28 +23,15 @@ return [
     ],
     'edit_fields' => [
         'name' => [
-            'title' => '名称',
-        ],
-        'slug' => [
-            'title' => 'Slug',
-        ],
-        'description' => [
-            'title' => '描述',
-            'type'  => 'textarea',
+            'title' => trans('administrator::dashboard.sections.name'),
         ],
     ],
     'filters' => [
         'id' => [
-            'title' => '标签 ID',
+            'title' => 'ID',
         ],
         'name' => [
-            'title' => '名称',
-        ],
-        'slug' => [
-            'title' => 'Slug',
-        ],
-        'description' => [
-            'title' => '描述',
+            'title' => trans('administrator::dashboard.sections.name'),
         ],
     ],
     'rules'   => [

@@ -119,6 +119,7 @@ return [
         'status_name'     => '状态',
         'description'     => '描述',
         'icon'            => '节点图标',
+        'order'           => '排序',
         'slug'            => 'Slug',
         'slug_help'       => '快捷路径',
         'select_category' => '请选择分类',
@@ -265,6 +266,23 @@ return [
         'name'  => 'Name',
         'display_name' => 'Display name',
         'description' => 'Description',
+    ],
+
+    'credits' => [
+        'credits' => '积分',
+        'balance' => '余额',
+        'frequency_tag' => '频次标签',
+        'body'  => '内容',
+        'author' => '作者',
+        'credit_rule' => '积分规则',
+    ],
+
+    'credit_rules' => [
+        'credit_rules' => '积分规则',
+        'name' => '名称',
+        'frequency' => '频次',
+        'slug'  => '标识',
+        'reward' => '分值',
     ],
 
     'links' => [

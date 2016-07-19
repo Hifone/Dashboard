@@ -119,6 +119,7 @@ return [
         'status_name'     => 'Status',
         'description'     => 'Description',
         'icon'            => 'Node Icon',
+        'order'           => 'Order',
         'slug'            => 'Slug',
         'slug_help'       => 'Slug Help',
         'select_category' => 'Select Category',
@@ -265,6 +266,23 @@ return [
         'name'  => 'Name',
         'display_name' => 'Display name',
         'description' => 'Description',
+    ],
+
+    'credits' => [
+        'credits' => 'Credits',
+        'balance' => 'Balance',
+        'frequency_tag' => 'Frequency tag',
+        'body'  => 'Body',
+        'author' => 'Owner',
+        'credit_rule' => 'Credit rule',
+    ],
+
+    'credit_rules' => [
+        'credit_rules' => 'Credit Rules',
+        'name' => 'Name',
+        'frequency' => 'Frequency',
+        'slug'  => 'Slug',
+        'reward' => 'Reward',
     ],
 
     'links' => [

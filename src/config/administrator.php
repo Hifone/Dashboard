@@ -76,6 +76,8 @@ return [
             'users',
             'roles',
             'permissions',
+            'credits',
+            'credit_rules',
         ],
         'content' => [
             'threads',

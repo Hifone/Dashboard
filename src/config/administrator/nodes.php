@@ -21,6 +21,10 @@ return [
             'title'    => trans('administrator::dashboard.nodes.description'),
             'sortable' => false,
         ],
+        'order' => [
+            'title'    => trans('administrator::dashboard.nodes.order'),
+            'sortable' => true,
+        ],
         'section' => [
             'title'    => trans('administrator::dashboard.nodes.parent'),
             'sortable' => false,
@@ -51,6 +55,9 @@ return [
             'title' => trans('administrator::dashboard.nodes.description'),
             'type' => 'textarea',
         ],
+        'order' => [
+            'title'    => trans('administrator::dashboard.nodes.order'),
+        ],
         'section' => [
             'title'              => trans('administrator::dashboard.nodes.parent'),
             'type'               => 'relationship',
@@ -71,6 +78,9 @@ return [
         ],
         'description' => [
             'title' => trans('administrator::dashboard.nodes.description'),
+        ],
+        'order' => [
+            'title'    => trans('administrator::dashboard.nodes.order'),
         ],
         'section' => [
             'title'              => trans('administrator::dashboard.nodes.parent'),
