@@ -311,6 +311,19 @@ return [
         ],
     ],
 
+    // Revisions
+    'revisions' => [
+        'revisions' => 'Revisions',
+        'revisionable_type' => 'Revisionable type',
+        'revisionable_id' => 'Revisionable id',
+        'author' => 'Author',
+        'key' => 'Key',
+        'log' => 'Operation log',
+        'old_value' => 'Old value',
+        'new_value' => 'New value',
+        'created_at' => 'Created at',
+    ],
+
     // Settings
     'settings' => [
         'settings'    => 'Einstellungen',

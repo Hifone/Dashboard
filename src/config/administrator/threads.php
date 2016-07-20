@@ -132,7 +132,7 @@ return [
         'user' => [
             'title'              => trans('administrator::dashboard.users.username'),
             'type'               => 'relationship',
-            'name_field'         => 'name',
+            'name_field'         => 'username',
             'autocomplete'       => true,
             'search_fields'      => array("CONCAT(id, ' ', username)"),
             'options_sort_field' => 'id',

@@ -310,6 +310,19 @@ return [
         ],
     ],
 
+    // Revisions
+    'revisions' => [
+        'revisions' => '操作日志',
+        'revisionable_type' => '操作Model',
+        'revisionable_id' => 'Model id',
+        'author' => '操作用户',
+        'key' => '操作字段',
+        'log' => '操作日志',
+        'old_value' => '修改前的值',
+        'new_value' => '修改后的值',
+        'created_at' => '操作时间',
+    ],
+
     // Settings
     'settings' => [
         'settings'    => '设置',

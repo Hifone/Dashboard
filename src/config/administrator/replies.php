@@ -15,7 +15,7 @@ return [
             'sortable' => false,
             'output'   => function ($value, $model) {
                 return admin_link(
-                    $model->user->name,
+                    $model->user->username,
                     'users',
                     $model->user_id
                 );
@@ -50,9 +50,9 @@ return [
         'user' => [
             'title'              => trans('administrator::dashboard.replies.author'),
             'type'               => 'relationship',
-            'name_field'         => 'name',
+            'name_field'         => 'username',
             'autocomplete'       => true,
-            'search_fields'      => array("CONCAT(id, ' ', name)"),
+            'search_fields'      => array("CONCAT(id, ' ', username)"),
             'options_sort_field' => 'id',
         ],
         'thread' => [

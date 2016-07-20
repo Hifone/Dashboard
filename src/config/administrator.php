@@ -95,10 +95,11 @@ return [
             'links',
             'tips',
             'locations',
+            'stats',
+            'revisions',
         ],
         'settings' => [
             'providers',
-            'stats',
             'configs',
         ],
     ],
