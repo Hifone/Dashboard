@@ -13,6 +13,10 @@ return [
             'title'    => trans('administrator::dashboard.sections.name'),
             'sortable' => false,
         ],
+        'order' => [
+            'title'    => trans('administrator::dashboard.sections.order'),
+            'sortable' => false,
+        ],
         'operation' => [
             'title'  => trans('administrator::administrator.operation'),
             'output' => function ($value, $model) {
@@ -24,6 +28,9 @@ return [
     'edit_fields' => [
         'name' => [
             'title' => trans('administrator::dashboard.sections.name'),
+        ],
+        'order' => [
+            'title'    => trans('administrator::dashboard.sections.order'),
         ],
     ],
     'filters' => [
